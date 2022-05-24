@@ -66,10 +66,9 @@
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: 1fr 1fr;
   max-width: 800px;
 }
 
