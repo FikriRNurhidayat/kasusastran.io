@@ -3,8 +3,15 @@
     "baseUrl": ".",
     "paths": {
       ":assets/*": ["assets/*"],
+      ":components": ["components"],
       ":components/*": ["components/*"],
+      ":layouts/*": ["layouts/*"],
+      ":layouts": ["layouts"],
+      ":lib/*": ["lib/*"],
+      ":lib": ["lib"],
+      ":networks": ["networks"],
       ":networks/*": ["networks/*"],
+      ":services": ["services"],
       ":services/*": ["services/*"]
     }
   },

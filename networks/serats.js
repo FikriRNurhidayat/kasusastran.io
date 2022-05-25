@@ -5,7 +5,13 @@ const kasusastran = axios.create({
   timeout: 1000,
 });
 
-export async function getSerats() {
-  const response = await kasusastran.get("/v1/serats");
+export async function listSerats(page = 1) {
+  const response = await kasusastran.get("/v1/serats", {
+    params: {
+      "pagination.page": page,
+      "pagination.page_size": 12,
+    },
+  });
+
   return response.data;
 }
