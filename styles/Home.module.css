@@ -5,6 +5,7 @@
   gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 96rem;
+  overflow-y: hidden !important;
 }
 
 .Home-GridItem:nth-child(odd) {

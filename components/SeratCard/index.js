@@ -3,10 +3,17 @@ import Image from "next/image";
 import classNames from "classnames";
 import styles from "./style.module.css";
 
-export function SeratCard({ className, children, href, imgSrc, imgAlt }) {
+export function SeratCard({
+  className,
+  children,
+  href,
+  imgSrc,
+  imgAlt,
+  ...props
+}) {
   return (
     <Link href={href}>
-      <a className={classNames(styles["SeratCard"], className)}>
+      <a className={classNames(styles["SeratCard"], className)} {...props}>
         <div className={styles["SeratCard-Image"]}>
           <div>
             <Image

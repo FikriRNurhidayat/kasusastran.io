@@ -27,7 +27,7 @@ export default function Serat({
       <ContentLayout>
         <div className={styles["Serat-CTA"]}>
           <Link href="/">
-            <a>
+            <a data-aos="fade-left">
               <span>&larr;</span>
               <span>Kundur</span>
             </a>

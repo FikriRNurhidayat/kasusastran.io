@@ -40,12 +40,13 @@ export default function Home({ serats: initSerats, meta }) {
       <InfiniteScroll
         dataLength={serats.length}
         className={styles["Home-Grid"]}
-        hasMore={page < meta.pagination.page_size}
+        hasMore={page < meta.pagination.page_count}
         next={handleNext}
       >
         {serats.map(
           ({ id, title, description, thumbnail_image_url }, index) => (
             <SeratCard
+              data-aos="fade-up"
               className={styles["Home-GridItem"]}
               key={`${index}:${id}`}
               href={"/serats/" + id}

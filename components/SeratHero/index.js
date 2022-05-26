@@ -17,7 +17,9 @@ export function SeratHero({ children, imgSrc, imgAlt }) {
         </div>
       </div>
       <div className={styles["SeratHero-Overlay"]}>
-        <h1 className={styles["SeratHero-Title"]}>{children}</h1>
+        <h1 className={styles["SeratHero-Title"]} data-aos="fade-up">
+          {children}
+        </h1>
       </div>
     </section>
   );
