@@ -1,0 +1,24 @@
+.Serat-CTA {
+  width: 100%;
+  font-size: 1rem;
+}
+
+.Serat-CTA a {
+  display: inline-flex;
+  gap: 1rem;
+}
+
+.Serat-CTA:hover a {
+  color: brown;
+  animation: space-out 0.3s infinite alternate;
+}
+
+@keyframes space-out {
+  from {
+    gap: 1rem;
+  }
+
+  to {
+    gap: 2rem;
+  }
+}

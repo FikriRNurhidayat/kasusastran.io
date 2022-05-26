@@ -3,13 +3,7 @@ import Image from "next/image";
 import classNames from "classnames";
 import styles from "./style.module.css";
 
-export default function SeratCard({
-  className,
-  children,
-  href,
-  imgSrc,
-  imgAlt,
-}) {
+export function SeratCard({ className, children, href, imgSrc, imgAlt }) {
   return (
     <Link href={href}>
       <a className={classNames(styles["SeratCard"], className)}>
@@ -21,6 +15,7 @@ export default function SeratCard({
               layout="fill"
               objectFit="cover"
               blurDataURL={imgSrc}
+              placeholder="blur"
             />
           </div>
         </div>

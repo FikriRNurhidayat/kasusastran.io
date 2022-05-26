@@ -1,0 +1,16 @@
+.Loading {
+  overflow: hidden;
+  color: brown;
+  font-family: "Allura", cursive;
+  animation: dim 1s infinite alternate;
+}
+
+@keyframes dim {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.1;
+  }
+}

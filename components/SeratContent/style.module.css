@@ -1,0 +1,10 @@
+.SeratContent {
+  font-family: "Allura", cursive;
+  max-width: 48rem;
+}
+
+.SeratContent > * {
+  line-height: 1.92;
+  font-size: 1.92rem;
+  text-align: justify;
+}

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const kasusastran = axios.create({
-  baseURL: process.env.KASUSASTRAN_API_URL,
+  baseURL: process.env.NEXT_PUBLIC_KASUSASTRAN_API_URL,
   timeout: 1000,
 });
 
@@ -13,5 +13,10 @@ export async function listSerats(page = 1) {
     },
   });
 
+  return response.data;
+}
+
+export async function getSerat(id) {
+  const response = await kasusastran.get(`/v1/serats/${id}`);
   return response.data;
 }

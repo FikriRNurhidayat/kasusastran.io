@@ -1,54 +1,8 @@
-.Home-Hero {
-  min-height: 50vh;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-
-.Home-Title a {
-  color: brown;
-  text-decoration: none;
-}
-
-.Home-Title a:hover,
-.Home-Title a:focus,
-.Home-Title a:active {
-  text-decoration: underline;
-}
-
-.Home-Title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.Home-Title,
-.Home-Description {
-  text-align: center;
-}
-
-.Home-Description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.Home-Code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: inherit;
-}
-
 .Home-Grid {
   display: grid;
   align-items: stretch;
   justify-content: stretch;
-  gap: 4rem;
+  gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
   max-width: 96rem;
 }
@@ -57,9 +11,18 @@
   margin-top: 4rem;
 }
 
+.Home-Spinner {
+  margin: 4rem auto;
+}
+
 @media (max-width: 600px) {
   .Home-Grid {
     width: 100%;
+    display: flex;
     flex-direction: column;
+  }
+
+  .Home-GridItem:nth-child(odd) {
+    margin-top: inherit;
   }
 }

@@ -1,0 +1,28 @@
+.HeroSection {
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.HeroSection-Title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 6.9rem;
+  color: brown;
+  text-decoration: none;
+  font-family: "Allura", cursive;
+}
+
+.HeroSection-Title,
+.HeroSection-Description {
+  text-align: center;
+}
+
+.HeroSection-Description {
+  margin: 4rem 0;
+  font-size: 1.25rem;
+}

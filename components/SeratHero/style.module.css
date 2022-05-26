@@ -1,0 +1,51 @@
+.SeratHero {
+  position: relative;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.SeratHero-Image {
+  width: 100%;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.SeratHero-Image > div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 5;
+}
+
+.SeratHero-Title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Allura", cursive;
+  text-shadow: 1px 1px 0.25rem black;
+}
+
+.SeratHero-Overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), brown);
+}
+
+.SeratHero-Overlay > * {
+  margin: auto;
+  max-width: 48rem;
+}

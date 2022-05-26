@@ -1,14 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&family=Satisfy&family=Smooch&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Tiro+Bangla&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Parisienne", cursive;
+  font-family: "Tiro Bangla", serif;
   background: rgba(0, 0, 0, 0.001);
   line-height: 1.7;
   filter: grayscale(0.5);
   -webkit-filter: grayscale(0.5);
+}
+
+code {
+  font-family: "Courier Prime", monospace;
 }
 
 p {

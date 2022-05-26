@@ -12,7 +12,8 @@
       ":networks": ["networks"],
       ":networks/*": ["networks/*"],
       ":services": ["services"],
-      ":services/*": ["services/*"]
+      ":services/*": ["services/*"],
+      ":styles/*": ["styles/*"]
     }
   },
   "exclude": ["node_modules"]
